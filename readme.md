@@ -2,8 +2,6 @@
 
 > Require a module like [`require()`](https://nodejs.org/api/globals.html#globals_require) but from the current working directory
 
-Unlike `require()` it returns `null` instead of throwing when the module can't be found.
-
 
 ## Install
 
@@ -32,6 +30,12 @@ reqCwd('./foo');
 ## API
 
 ### reqCwd(moduleId)
+
+Like `require()`, throws when the module can't be found.
+
+### reqCwd.silent(moduleId)
+
+Returns `null` instead of throwing when the module can't be found.
 
 #### moduleId
 

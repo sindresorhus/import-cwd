@@ -32,7 +32,7 @@
     "directory"
   ],
   "dependencies": {
-    "req-from": "^1.0.0"
+    "req-from": "^1.0.1"
   },
   "devDependencies": {
     "ava": "*",

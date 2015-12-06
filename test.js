@@ -4,5 +4,7 @@ import fn from './';
 test(t => {
 	process.chdir('fixture');
 	t.is(fn('./fixture'), 'unicorn');
-	t.is(fn('./fixture2'), null);
+	t.throws(() => fn('./nonexistent'));
+	t.is(fn.silent('./fixture'), 'unicorn');
+	t.is(fn.silent('./nonexistent'), null);
 });
