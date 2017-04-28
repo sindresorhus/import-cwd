@@ -15,7 +15,7 @@ $ npm install --save req-cwd
 ```js
 const reqCwd = require('req-cwd');
 
-// target module at '/Users/sindresorhus/unicorn/foo.js'
+// Target module is at '/Users/sindresorhus/unicorn/foo.js'
 
 console.log(__dirname);
 //=> '/Users/sindresorhus/rainbow'
@@ -23,7 +23,7 @@ console.log(__dirname);
 console.log(process.cwd());
 //=> '/Users/sindresorhus/unicorn'
 
-reqCwd('./foo');
+const foo = reqCwd('./foo');
 ```
 
 
@@ -55,4 +55,4 @@ What you would use in `require()`.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

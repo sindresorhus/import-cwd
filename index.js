@@ -1,10 +1,5 @@
 'use strict';
-var reqFrom = require('req-from');
+const reqFrom = require('req-from');
 
-module.exports = function (moduleId) {
-	return reqFrom('.', moduleId);
-};
-
-module.exports.silent = function (moduleId) {
-	return reqFrom.silent('.', moduleId);
-};
+module.exports = moduleId => reqFrom(process.cwd(), moduleId);
+module.exports.silent = moduleId => reqFrom.silent(process.cwd(), moduleId);

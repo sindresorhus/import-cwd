@@ -1,10 +1,16 @@
 import test from 'ava';
-import fn from './';
+import m from '.';
 
-test(t => {
-	process.chdir('fixture');
-	t.is(fn('./fixture'), 'unicorn');
-	t.throws(() => fn('./nonexistent'));
-	t.is(fn.silent('./fixture'), 'unicorn');
-	t.is(fn.silent('./nonexistent'), null);
+process.chdir('fixture');
+
+test('reqCwd()', t => {
+	t.is(m('./fixture'), 'unicorn');
+	t.throws(() => {
+		m('./nonexistent');
+	});
+});
+
+test('reqCwd.silent()', t => {
+	t.is(m.silent('./fixture'), 'unicorn');
+	t.is(m.silent('./nonexistent'), null);
 });
