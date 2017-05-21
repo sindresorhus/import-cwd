@@ -1,19 +1,19 @@
-# req-cwd [![Build Status](https://travis-ci.org/sindresorhus/req-cwd.svg?branch=master)](https://travis-ci.org/sindresorhus/req-cwd)
+# import-cwd [![Build Status](https://travis-ci.org/sindresorhus/import-cwd.svg?branch=master)](https://travis-ci.org/sindresorhus/import-cwd)
 
-> Require a module like [`require()`](https://nodejs.org/api/globals.html#globals_require) but from the current working directory
+> Import a module like with [`require()`](https://nodejs.org/api/globals.html#globals_require) but from the current working directory
 
 
 ## Install
 
 ```
-$ npm install --save req-cwd
+$ npm install --save import-cwd
 ```
 
 
 ## Usage
 
 ```js
-const reqCwd = require('req-cwd');
+const importCwd = require('import-cwd');
 
 // Target module is at '/Users/sindresorhus/unicorn/foo.js'
 
@@ -23,17 +23,17 @@ console.log(__dirname);
 console.log(process.cwd());
 //=> '/Users/sindresorhus/unicorn'
 
-const foo = reqCwd('./foo');
+const foo = importCwd('./foo');
 ```
 
 
 ## API
 
-### reqCwd(moduleId)
+### importCwd(moduleId)
 
 Like `require()`, throws when the module can't be found.
 
-### reqCwd.silent(moduleId)
+### importCwd.silent(moduleId)
 
 Returns `null` instead of throwing when the module can't be found.
 
@@ -46,11 +46,11 @@ What you would use in `require()`.
 
 ## Related
 
-- [req-from](https://github.com/sindresorhus/req-from) - Require a module from a given path
+- [import-from](https://github.com/sindresorhus/import-from) - Import a module from a given path
 - [resolve-from](https://github.com/sindresorhus/resolve-from) - Resolve the path of a module from a given path
 - [resolve-cwd](https://github.com/sindresorhus/resolve-cwd) - Resolve the path of a module from the current working directory
 - [resolve-pkg](https://github.com/sindresorhus/resolve-pkg) - Resolve the path of a package regardless of it having an entry point
-- [lazy-req](https://github.com/sindresorhus/lazy-req) - Require modules lazily
+- [import-lazy](https://github.com/sindresorhus/import-lazy) - Import modules lazily
 
 
 ## License

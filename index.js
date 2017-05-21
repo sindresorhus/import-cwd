@@ -1,5 +1,5 @@
 'use strict';
-const reqFrom = require('req-from');
+const importFrom = require('import-from');
 
-module.exports = moduleId => reqFrom(process.cwd(), moduleId);
-module.exports.silent = moduleId => reqFrom.silent(process.cwd(), moduleId);
+module.exports = moduleId => importFrom(process.cwd(), moduleId);
+module.exports.silent = moduleId => importFrom.silent(process.cwd(), moduleId);

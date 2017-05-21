@@ -3,14 +3,14 @@ import m from '.';
 
 process.chdir('fixture');
 
-test('reqCwd()', t => {
+test('importCwd()', t => {
 	t.is(m('./fixture'), 'unicorn');
 	t.throws(() => {
 		m('./nonexistent');
 	});
 });
 
-test('reqCwd.silent()', t => {
+test('importCwd.silent()', t => {
 	t.is(m.silent('./fixture'), 'unicorn');
 	t.is(m.silent('./nonexistent'), null);
 });
