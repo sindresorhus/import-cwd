@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save import-cwd
+$ npm install import-cwd
 ```
 
 
