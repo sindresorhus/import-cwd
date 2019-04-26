@@ -27,7 +27,7 @@ declare const importCwd: {
 	Import a module like with [`require()`](https://nodejs.org/api/globals.html#globals_require) but from the current working directory.
 
 	@param moduleId - What you would use in `require()`.
-	@returns `null` instead of throwing when the module can't be found.
+	@returns `undefined` instead of throwing when the module can't be found.
 
 	@example
 	```
@@ -42,7 +42,7 @@ declare const importCwd: {
 	//=> '/Users/sindresorhus/empty'
 
 	const foo = importCwd.silent('./nonexistent');
-	//=> null
+	//=> undefined
 	```
 	*/
 	silent(moduleId: string): unknown;

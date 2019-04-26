@@ -35,7 +35,7 @@ Like `require()`, throws when the module can't be found.
 
 ### importCwd.silent(moduleId)
 
-Returns `null` instead of throwing when the module can't be found.
+Returns `undefined` instead of throwing when the module can't be found.
 
 #### moduleId
 

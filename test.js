@@ -12,5 +12,5 @@ test('importCwd()', t => {
 
 test('importCwd.silent()', t => {
 	t.is(importCwd.silent('./fixture'), 'unicorn');
-	t.is(importCwd.silent('./nonexistent'), null);
+	t.is(importCwd.silent('./nonexistent'), undefined);
 });
