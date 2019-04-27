@@ -33,7 +33,7 @@
 		"import"
 	],
 	"dependencies": {
-		"import-from": "^2.1.0"
+		"import-from": "^3.0.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",
