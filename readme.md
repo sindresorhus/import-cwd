@@ -1,4 +1,4 @@
-# import-cwd [![Build Status](https://travis-ci.org/sindresorhus/import-cwd.svg?branch=master)](https://travis-ci.org/sindresorhus/import-cwd)
+# import-cwd
 
 > Import a module like with [`require()`](https://nodejs.org/api/globals.html#globals_require) but from the current working directory
 
